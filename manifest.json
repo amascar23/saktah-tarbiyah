@@ -1,0 +1,27 @@
+{
+  "name": "Saktah Tarbiyah — Ruang Tumbuh & Belajar Anak",
+  "short_name": "Saktah Tarbiyah",
+  "description": "Pendampingan belajar anak usia TK & SD: Calistung, Mengaji Iqra & Tahsin, Doa & Adab Harian, Kartu Kehadiran, dan Saktah Play.",
+  "lang": "id",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4efdc",
+  "theme_color": "#344c38",
+  "categories": ["education", "kids", "lifestyle"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

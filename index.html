@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saktah Tarbiyah — Ruang Tumbuh &amp; Belajar yang Tenang untuk Buah Hati</title>
+  <meta name="description" content="Pendampingan belajar anak yang hangat, personal, dan terukur: Kelas Calistung &amp; Tematik SD/TK, Mengaji Iqra &amp; Tahsin Anak, serta Adab &amp; Doa Harian." />
+  <meta name="theme-color" content="#344c38" id="themeColorMeta" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Saktah Tarbiyah" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="logo-saktah.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#beranda">Lewati ke konten utama</a>
+
+  <!-- 1. NAVBAR -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#beranda" class="brand" aria-label="Beranda Saktah Tarbiyah">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="logo-saktah.png" alt="" class="brand-logo-img" />
+          <svg class="brand-monogram" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="40" height="40" rx="12" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6" />
+            <path d="M13 28.5C13 24.9 16.5 23.4 22 22C27.5 20.6 31 19.1 31 15.5C31 12.6 27.6 10.5 22.5 10.5C17.8 10.5 14.4 12.4 13.5 15.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            <path d="M30.5 28.9C29.6 31.6 26.2 33.5 21.5 33.5C16.4 33.5 13 31.4 13 28.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+            <circle cx="22" cy="22" r="2.2" fill="currentColor" />
+            <path d="M22 6.5L23.4 8.2L22 9.9L20.6 8.2L22 6.5Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Saktah Tarbiyah</span>
+          <span class="brand-sub">Bimbingan Belajar Keluarga</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="#beranda" class="nav-link">Beranda</a></li>
+          <li><a href="#program" class="nav-link">Program</a></li>
+          <li><a href="#kartu-kehadiran" class="nav-link">Kartu Kehadiran</a></li>
+          <li><a href="#saktah-play" class="nav-link">Saktah Play</a></li>
+          <li><a href="#daftar" class="nav-link nav-link-cta">Daftar</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Aktifkan mode gelap"
+          aria-pressed="false"
+          title="Ganti tema terang / gelap"
+        >
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </span>
+          <span class="theme-icon theme-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79Z" />
+            </svg>
+          </span>
+          <span class="theme-label">Mode Gelap</span>
+        </button>
+
+        <button
+          type="button"
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero section" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Pendampingan Belajar Usia TK &amp; SD
+          </p>
+          <h1 class="hero-title">Ruang Tumbuh &amp; Belajar yang Tenang untuk Buah Hati</h1>
+          <p class="hero-desc">
+            Di Saktah Tarbiyah, setiap anak belajar tanpa tergesa. Kami mendampingi tumbuh kembang buah hati melalui
+            <strong>Calistung &amp; Tematik</strong>, <strong>Mengaji Iqra/Al-Qur'an</strong>, serta
+            <strong>Hafalan Doa &amp; Adab Harian</strong> dengan ritme yang lembut, hangat, dan ramah keluarga.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#daftar" class="btn btn-primary">Daftar Kelas Sekarang</a>
+            <a href="#saktah-play" class="btn btn-secondary">Coba Saktah Play</a>
+          </div>
+
+          <dl class="hero-metrics" aria-label="Ringkasan program Saktah Tarbiyah">
+            <div class="metric-item">
+              <dt>Format Siklus</dt>
+              <dd>12 Pertemuan</dd>
+            </div>
+            <div class="metric-item">
+              <dt>Pendekatan</dt>
+              <dd>Privat &amp; Kelompok Kecil</dd>
+            </div>
+            <div class="metric-item">
+              <dt>Fokus Utama</dt>
+              <dd>Calistung · Iqra · Adab</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="paper-stack">
+            <div class="paper-layer paper-back-2"></div>
+            <div class="paper-layer paper-back-1"></div>
+            <div class="paper-card hero-showcase">
+              <div class="showcase-header">
+                <span class="showcase-pill">Jeda Saktah · Napas Tenang</span>
+                <span class="showcase-step">Siklus 12 Pertemuan</span>
+              </div>
+
+              <div class="showcase-body">
+                <div class="showcase-arch">
+                  <svg viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg" class="paper-cut-art">
+                    <path d="M18 138C18 82 56 36 110 36C164 36 202 82 202 138H18Z" fill="currentColor" fill-opacity="0.1" />
+                    <path d="M38 138C38 94 69 58 110 58C151 58 182 94 182 138H38Z" fill="currentColor" fill-opacity="0.14" />
+                    <rect x="64" y="88" width="92" height="44" rx="10" fill="var(--bg-surface)" stroke="currentColor" stroke-opacity="0.24" stroke-width="1.5" />
+                    <path d="M110 88V132" stroke="currentColor" stroke-opacity="0.22" stroke-width="1.5" />
+                    <path d="M75 103H99M75 113H95M121 103H145M121 113H141" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" />
+                    <circle cx="110" cy="24" r="7" fill="currentColor" fill-opacity="0.24" />
+                  </svg>
+                </div>
+
+                <ul class="showcase-list">
+                  <li>
+                    <span class="check-badge">01</span>
+                    <span>Calistung &amp; Pemahaman Tematik</span>
+                  </li>
+                  <li>
+                    <span class="check-badge">02</span>
+                    <span>Iqra, Makhraj &amp; Tahsin Bertahap</span>
+                  </li>
+                  <li>
+                    <span class="check-badge">03</span>
+                    <span>Hafalan Doa &amp; Pembiasaan Adab</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="showcase-footer">
+                <span>Laporan perkembangan berkala untuk Ayah &amp; Bunda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TENTANG & FILOSOFI SAKTAH TARBIYAH -->
+    <section class="section section-tinted" id="tentang">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Tentang &amp; Filosofi</p>
+          <h2 class="section-title">Belajar Bukan Perlombaan, Melainkan Jeda yang Bermakna</h2>
+          <p class="section-lead">
+            Terinspirasi dari makna <em>Saktah</em>—jeda sejenak untuk menata napas dan kesadaran—kami menghadirkan
+            suasana belajar yang teduh agar anak merasa aman, didengarkan, dan senang berproses.
+          </p>
+        </div>
+
+        <div class="grid-3 philosophy-grid">
+          <article class="paper-card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 27s-9-5.6-9-12.5A5.2 5.2 0 0 1 16 11a5.2 5.2 0 0 1 9 3.5C25 21.4 16 27 16 27Z" />
+                <path d="M12.5 15.5c.8 1 2 1.5 3.5 1.5s2.7-.5 3.5-1.5" />
+              </svg>
+            </div>
+            <span class="card-index">01</span>
+            <h3 class="card-title">Pendekatan Personal &amp; Lembut</h3>
+            <p class="card-text">
+              Setiap anak memiliki tempo serap yang unik. Pendamping menyesuaikan cara mengajar dengan karakter anak
+              tanpa tekanan, bentakan, maupun perbandingan antar teman.
+            </p>
+          </article>
+
+          <article class="paper-card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="6" width="22" height="20" rx="4" />
+                <path d="M10 4v4M22 4v4M5 12h22M11 17h4M11 21h10" />
+              </svg>
+            </div>
+            <span class="card-index">02</span>
+            <h3 class="card-title">Kurikulum 12 Pertemuan Terukur</h3>
+            <p class="card-text">
+              Materi disusun dalam siklus 12 pertemuan yang runtut—mulai dari asesmen awal, penguatan pondasi, hingga
+              evaluasi akhir yang jelas arah capaiannya.
+            </p>
+          </article>
+
+          <article class="paper-card feature-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 25V9a2 2 0 0 1 2-2h10l6 6v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2Z" />
+                <path d="M19 7v6h6M11 17h10M11 21h7" />
+              </svg>
+            </div>
+            <span class="card-index">03</span>
+            <h3 class="card-title">Laporan Progres Transparan</h3>
+            <p class="card-text">
+              Ayah dan Bunda menerima catatan perkembangan tiap sesi serta rangkuman capaian anak agar pendampingan di
+              rumah dan di kelas berjalan selaras.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROGRAM BELAJAR -->
+    <section class="section" id="program">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Program Belajar</p>
+          <h2 class="section-title">Pilihan Kelas yang Selaras dengan Tahap Tumbuh Anak</h2>
+          <p class="section-lead">
+            Pilih program yang paling sesuai dengan kebutuhan buah hati saat ini. Setiap program tersedia dalam sesi
+            privat di rumah maupun kelompok kecil yang kondusif.
+          </p>
+        </div>
+
+        <div class="grid-3 program-grid">
+          <article class="paper-card program-card">
+            <div class="program-top">
+              <span class="program-badge">Program 01 · TK &amp; SD Awal</span>
+              <h3 class="program-title">Kelas Calistung &amp; Tematik SD/TK</h3>
+              <p class="program-desc">
+                Mengenalkan huruf, suku kata, membaca pemahaman, menulis rapi, serta berhitung logis lewat media
+                permainan kertas dan aktivitas kontekstual yang menyenangkan.
+              </p>
+            </div>
+            <ul class="program-points">
+              <li>Usia 4–9 tahun (TK A/B &amp; SD Kelas 1–3)</li>
+              <li>Membaca lancar tanpa mengeja kaku</li>
+              <li>Pendampingan PR &amp; literasi tematik sekolah</li>
+            </ul>
+            <div class="program-footer">
+              <button
+                type="button"
+                class="btn btn-outline select-program-btn"
+                data-program="Kelas Calistung & Tematik SD/TK"
+              >
+                Pilih Program
+              </button>
+            </div>
+          </article>
+
+          <article class="paper-card program-card program-card-featured">
+            <div class="program-top">
+              <span class="program-badge">Program 02 · Al-Qur'an Anak</span>
+              <h3 class="program-title">Kelas Mengaji Iqra &amp; Tahsin Anak</h3>
+              <p class="program-desc">
+                Membangun kecintaan anak terhadap Al-Qur'an dengan pengenalan huruf hijaiyah, ketepatan makhraj, panjang
+                pendek bacaan, serta tilawah yang tartil dan tenang.
+              </p>
+            </div>
+            <ul class="program-points">
+              <li>Usia 4–12 tahun (Iqra 1–6 hingga Al-Qur'an)</li>
+              <li>Latihan pelafalan makharijul huruf bertahap</li>
+              <li>Muraja'ah surat-surat pendek Juz Amma</li>
+            </ul>
+            <div class="program-footer">
+              <button
+                type="button"
+                class="btn btn-primary select-program-btn"
+                data-program="Kelas Mengaji Iqra & Tahsin Anak"
+              >
+                Pilih Program
+              </button>
+            </div>
+          </article>
+
+          <article class="paper-card program-card">
+            <div class="program-top">
+              <span class="program-badge">Program 03 · Pembiasaan Karakter</span>
+              <h3 class="program-title">Kelas Adab &amp; Doa Harian</h3>
+              <p class="program-desc">
+                Menanamkan adab keseharian kepada orang tua, guru, dan teman melalui kisah teladan, praktik langsung,
+                serta hafalan doa harian yang mudah diingat anak.
+              </p>
+            </div>
+            <ul class="program-points">
+              <li>Usia 4–10 tahun (TK &amp; SD)</li>
+              <li>Hafalan doa harian beserta arti sederhananya</li>
+              <li>Praktik adab makan, belajar, tidur, &amp; bertutur</li>
+            </ul>
+            <div class="program-footer">
+              <button
+                type="button"
+                class="btn btn-outline select-program-btn"
+                data-program="Kelas Adab & Doa Harian"
+              >
+                Pilih Program
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ALUR BELAJAR 12 PERTEMUAN & KARTU KEHADIRAN -->
+    <section class="section section-tinted" id="alur-belajar">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Alur Belajar 12 Pertemuan</p>
+          <h2 class="section-title">Perjalanan Terstruktur dari Pertemuan ke-1 hingga ke-12</h2>
+          <p class="section-lead">
+            Setiap paket belajar dirancang dalam 4 fase bertahap agar anak tidak merasa terbebani, sekaligus memudahkan
+            orang tua memantau kemajuan dari awal hingga apresiasi akhir.
+          </p>
+        </div>
+
+        <ol class="timeline-grid">
+          <li class="paper-card timeline-step">
+            <div class="step-pill">Pertemuan 1</div>
+            <h3 class="step-title">Asesmen Awal &amp; Pengenalan Diri</h3>
+            <p class="step-desc">
+              Pemetaan kemampuan awal anak secara santai, mengenali gaya belajarnya, serta membangun rasa nyaman
+              bersama pendamping.
+            </p>
+          </li>
+
+          <li class="paper-card timeline-step">
+            <div class="step-pill">Pertemuan 2 – 5</div>
+            <h3 class="step-title">Penguatan Pondasi Materi</h3>
+            <p class="step-desc">
+              Pengenalan konsep inti secara perlahan—huruf, bunyi, angka, atau makhraj dasar—diselingi aktivitas visual
+              dan jeda fokus yang ramah anak.
+            </p>
+          </li>
+
+          <li class="paper-card timeline-step">
+            <div class="step-pill">Pertemuan 6 – 11</div>
+            <h3 class="step-title">Latihan Konsisten &amp; Pembiasaan</h3>
+            <p class="step-desc">
+              Pendalaman materi dengan latihan bertingkat, pengulangan halus (muraja'ah), serta pencatatan progres
+              tengah siklus bagi orang tua.
+            </p>
+          </li>
+
+          <li class="paper-card timeline-step">
+            <div class="step-pill">Pertemuan 12</div>
+            <h3 class="step-title">Evaluasi &amp; Apresiasi Anak</h3>
+            <p class="step-desc">
+              Peninjauan capaian 12 sesi, penyerahan laporan perkembangan utuh kepada orang tua, dan apresiasi hangat
+              atas usaha buah hati.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- KARTU KEHADIRAN & CATATAN PROGRES -->
+    <section class="section section-divider-bottom" id="kartu-kehadiran">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Kartu Kehadiran &amp; Catatan Progres</p>
+          <h2 class="section-title">Kartu Kehadiran &amp; Catatan Perkembangan Murid</h2>
+          <p class="section-lead">
+            Kelola profil beberapa murid sekaligus, tandai kehadiran 12 pertemuan beserta tanggalnya, catat materi tiap
+            sesi, dan kirim rekap progres langsung ke WhatsApp orang tua. Semua data tersimpan otomatis di browser Anda.
+          </p>
+        </div>
+
+        <!-- 1. Manajemen Data Murid -->
+        <div class="paper-card student-manager-card">
+          <div class="manager-topbar">
+            <div class="manager-select-wrap">
+              <label for="studentProfileSelect" class="form-label manager-label">Pilih Profil Kartu Murid</label>
+              <select id="studentProfileSelect" class="form-control manager-select"></select>
+            </div>
+            <div class="manager-btn-group">
+              <button type="button" class="btn btn-primary btn-sm" id="newStudentCardBtn">+ Kartu Baru</button>
+              <button type="button" class="btn btn-outline btn-sm" id="deleteStudentCardBtn">Hapus Kartu</button>
+            </div>
+          </div>
+
+          <div class="student-profile-grid">
+            <div class="profile-field">
+              <label for="cardStudentName" class="form-label">Nama Murid</label>
+              <input
+                type="text"
+                id="cardStudentName"
+                class="form-control"
+                placeholder="Contoh: Aisyah Humaira"
+                maxlength="60"
+              />
+            </div>
+
+            <div class="profile-field">
+              <label for="cardStudentProgram" class="form-label">Program / Kelas</label>
+              <input
+                type="text"
+                id="cardStudentProgram"
+                class="form-control"
+                list="programSuggestions"
+                placeholder="Contoh: Kelas Mengaji Iqra &amp; Tahsin Anak"
+                maxlength="80"
+              />
+              <datalist id="programSuggestions">
+                <option value="Kelas Calistung &amp; Tematik SD/TK"></option>
+                <option value="Kelas Mengaji Iqra &amp; Tahsin Anak"></option>
+                <option value="Kelas Adab &amp; Doa Harian"></option>
+              </datalist>
+            </div>
+
+            <div class="profile-field">
+              <label for="cardTeacherName" class="form-label">Pengajar</label>
+              <input
+                type="text"
+                id="cardTeacherName"
+                class="form-control"
+                placeholder="Contoh: Ustazah Hana"
+                maxlength="60"
+              />
+            </div>
+
+            <div class="profile-field">
+              <label for="cardMonth" class="form-label">Bulan</label>
+              <input
+                type="text"
+                id="cardMonth"
+                class="form-control"
+                placeholder="Contoh: November 2026"
+                maxlength="40"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Tampilan Kartu Kehadiran Digital (12 Pertemuan) -->
+        <div class="paper-card digital-attendance-card">
+          <div class="digital-card-header">
+            <div>
+              <p class="digital-card-kicker">SAKTAH TARBIYAH &mdash; Kartu Kehadiran</p>
+              <h3 class="digital-card-heading">Catatan Kehadiran 12 Pertemuan</h3>
+            </div>
+            <span class="brand-mark digital-card-mark" aria-hidden="true">
+              <img src="logo-saktah.png" alt="" class="brand-logo-img" />
+              <svg class="brand-monogram" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="40" height="40" rx="12" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6" />
+                <path d="M13 28.5C13 24.9 16.5 23.4 22 22C27.5 20.6 31 19.1 31 15.5C31 12.6 27.6 10.5 22.5 10.5C17.8 10.5 14.4 12.4 13.5 15.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                <path d="M30.5 28.9C29.6 31.6 26.2 33.5 21.5 33.5C16.4 33.5 13 31.4 13 28.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                <circle cx="22" cy="22" r="2.2" fill="currentColor" />
+                <path d="M22 6.5L23.4 8.2L22 9.9L20.6 8.2L22 6.5Z" fill="currentColor" />
+              </svg>
+            </span>
+          </div>
+
+          <!-- 4 Baris Identitas -->
+          <dl class="card-identity-list">
+            <div class="identity-row">
+              <dt>Nama</dt>
+              <dd id="cardDisplayName">Belum diisi</dd>
+            </div>
+            <div class="identity-row">
+              <dt>Program / Kelas</dt>
+              <dd id="cardDisplayProgram">Belum diisi</dd>
+            </div>
+            <div class="identity-row">
+              <dt>Pengajar</dt>
+              <dd id="cardDisplayTeacher">Belum diisi</dd>
+            </div>
+            <div class="identity-row">
+              <dt>Bulan</dt>
+              <dd id="cardDisplayMonth">Belum diisi</dd>
+            </div>
+          </dl>
+
+          <div class="attendance-progress-wrap" aria-live="polite">
+            <div class="attendance-progress-meta">
+              <span id="attendanceSummaryText">0 dari 12 pertemuan hadir (0%)</span>
+              <span id="attendancePhaseBadge" class="phase-badge">Siap Memulai Pertemuan ke-1</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0" id="attendanceProgressBar">
+              <div class="progress-fill" id="attendanceProgressFill"></div>
+            </div>
+          </div>
+
+          <div class="stamp-grid" id="stampGrid" role="group" aria-label="Grid kehadiran 12 pertemuan">
+            <!-- Diisi dinamis oleh js/main.js -->
+          </div>
+          <p class="stamp-help-note">
+            Ketuk kotak pertemuan untuk menandai status <strong>Hadir</strong> beserta tanggal hari ini. Anda juga dapat
+            mengubah tanggal secara manual pada kotak yang sudah ditandai.
+          </p>
+        </div>
+
+        <!-- 3. Tabel Catatan Perkembangan Pertemuan (1 sampai 12) -->
+        <div class="paper-card progress-notes-card">
+          <div class="notes-header">
+            <div>
+              <h3 class="notes-title">Catatan Perkembangan Pertemuan</h3>
+              <p class="notes-subtitle">
+                Tuliskan materi yang dipelajari dan catatan perkembangan kecil pada tiap pertemuan (tersimpan otomatis).
+              </p>
+            </div>
+          </div>
+
+          <div class="notes-table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-ke">Ke-</th>
+                  <th scope="col" class="col-note">Materi &amp; Catatan Kecil</th>
+                </tr>
+              </thead>
+              <tbody id="progressNotesBody">
+                <!-- Diisi dinamis 1-12 oleh js/main.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 4. Kirim Laporan ke WhatsApp Orang Tua -->
+        <div class="paper-card recap-actions-card">
+          <div class="recap-layout">
+            <div class="recap-info">
+              <h3 class="recap-title">Kirim Rekap Perkembangan ke WhatsApp Orang Tua</h3>
+              <p class="recap-desc">
+                Pesan laporan hangat berisi nama murid, jumlah kehadiran, dan ringkasan catatan pertemuan terakhir akan
+                otomatis disiapkan saat Anda menekan tombol di samping.
+              </p>
+            </div>
+
+            <div class="recap-controls">
+              <label for="parentWaInput" class="sr-only">Nomor WhatsApp orang tua (opsional)</label>
+              <input
+                type="tel"
+                id="parentWaInput"
+                class="form-control recap-phone-input"
+                placeholder="No. WA Orang Tua (opsional, cth: 0812...)"
+                maxlength="20"
+              />
+              <button type="button" class="btn btn-primary" id="sendRecapWaBtn">
+                Kirim Rekap ke WhatsApp
+              </button>
+              <button type="button" class="btn btn-outline" id="copyRecapBtn">
+                Salin Teks
+              </button>
+            </div>
+          </div>
+
+          <div class="recap-preview-box" id="recapStatus" hidden aria-live="polite">
+            <p class="recap-preview-label">Pratinjau Pesan Rekap WhatsApp:</p>
+            <pre class="recap-preview-text" id="recapPreviewText"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ZONE: SAKTAH PLAY -->
+    <section class="section" id="saktah-play">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Saktah Play</p>
+          <h2 class="section-title">Pojok Main Tenang untuk Anak TK &amp; SD</h2>
+          <p class="section-lead">
+            Media belajar interaktif yang hangat dan bebas bising. Ajak buah hati membalik kartu doa &amp; adab atau
+            mengumpulkan bintang lewat kuis ringan bersama Ayah dan Bunda.
+          </p>
+        </div>
+
+        <div class="paper-card play-shell">
+          <div class="play-toolbar">
+            <div class="play-tabs" role="tablist" aria-label="Pilih permainan edukasi Saktah Play">
+              <button
+                type="button"
+                class="play-tab is-active"
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-flip"
+                id="tab-flip"
+                data-play-tab="flip"
+              >
+                Kartu Balik Pintar
+              </button>
+              <button
+                type="button"
+                class="play-tab"
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-quiz"
+                id="tab-quiz"
+                data-play-tab="quiz"
+              >
+                Kuis Bintang Saktah
+              </button>
+            </div>
+
+            <button type="button" class="sound-toggle" id="soundToggle" aria-pressed="true">
+              <span class="sound-dot" aria-hidden="true"></span>
+              <span id="soundToggleText">Nada Lembut: Aktif</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Kartu Balik Pintar (Flip Cards) -->
+          <div class="play-panel is-active" id="panel-flip" role="tabpanel" aria-labelledby="tab-flip">
+            <div class="play-prompt-box">
+              <div class="flip-filter-group" role="group" aria-label="Pilih kategori kartu balik pintar">
+                <button type="button" class="filter-pill is-active" data-flip-category="all">
+                  Semua Kartu (12)
+                </button>
+                <button type="button" class="filter-pill" data-flip-category="doa">
+                  Doa Harian (6)
+                </button>
+                <button type="button" class="filter-pill" data-flip-category="adab">
+                  Adab &amp; Kebiasaan Baik (6)
+                </button>
+              </div>
+              <div class="play-score-wrap">
+                <span class="score-pill" id="flipCounterText">Ketuk kartu untuk membalik</span>
+                <button type="button" class="btn btn-secondary btn-sm" id="flipResetBtn">Tutup Semua</button>
+              </div>
+            </div>
+
+            <div class="flip-grid" id="flipCardGrid">
+              <!-- Diisi dinamis oleh js/main.js -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Kuis Bintang Saktah -->
+          <div class="play-panel" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+            <div class="quiz-stage" id="quizStage">
+              <div class="quiz-topbar">
+                <div class="quiz-progress-info">
+                  <span class="quiz-step-label" id="quizStepLabel">Soal 1 dari 9</span>
+                  <div class="progress-track quiz-progress-track" aria-hidden="true">
+                    <div class="progress-fill" id="quizProgressFill"></div>
+                  </div>
+                </div>
+                <div class="star-score-badge" id="quizStarBadge" aria-live="polite">
+                  <svg class="star-badge-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.5l2.85 5.78 6.38.93-4.61 4.5 1.09 6.35L12 17.06l-5.71 3 1.09-6.35-4.61-4.5 6.38-.93L12 2.5Z" />
+                  </svg>
+                  <span id="quizStarCount">0 Bintang</span>
+                </div>
+              </div>
+
+              <div class="quiz-question-card">
+                <span class="quiz-topic-pill" id="quizTopicPill">Adab Harian</span>
+                <h3 class="quiz-question-text" id="quizQuestionText">Memuat pertanyaan...</h3>
+                <div class="quiz-visual-helper" id="quizVisualHelper" hidden></div>
+
+                <div class="quiz-options-grid" id="quizOptionsGrid">
+                  <!-- Diisi dinamis oleh js/main.js -->
+                </div>
+
+                <div class="quiz-feedback-area" id="quizFeedbackArea" hidden aria-live="polite">
+                  <div class="star-award-anim" id="quizStarAward" hidden aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2.5l2.85 5.78 6.38.93-4.61 4.5 1.09 6.35L12 17.06l-5.71 3 1.09-6.35-4.61-4.5 6.38-.93L12 2.5Z" />
+                    </svg>
+                    <span>+1 Bintang!</span>
+                  </div>
+                  <p class="quiz-feedback-msg" id="quizFeedbackMsg"></p>
+                  <button type="button" class="btn btn-primary btn-sm" id="quizNextBtn">
+                    Soal Berikutnya
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kartu Apresiasi Akhir Kuis -->
+            <div class="quiz-summary-card" id="quizSummaryCard" hidden aria-live="polite">
+              <div class="summary-emblem" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="22" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M24 10l4.1 8.3 9.2 1.3-6.6 6.5 1.6 9.1L24 30.9l-8.3 4.3 1.6-9.1-6.6-6.5 9.2-1.3L24 10Z" fill="currentColor" />
+                </svg>
+              </div>
+              <p class="section-tag">Apresiasi Saktah Play</p>
+              <h3 class="summary-title" id="quizSummaryTitle">MasyaAllah, Hebat Sekali!</h3>
+              <p class="summary-score-line" id="quizSummaryScore">Kamu berhasil mengumpulkan 0 dari 9 Bintang Saktah.</p>
+              <div class="summary-stars-row" id="quizSummaryStarsRow" aria-hidden="true"></div>
+              <p class="summary-encouragement" id="quizSummaryMessage">
+                Setiap proses belajar yang tenang adalah langkah kebaikan yang berharga.
+              </p>
+              <button type="button" class="btn btn-primary" id="quizRestartBtn">Main Lagi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ (TANYA JAWAB ORANG TUA) -->
+    <section class="section section-tinted" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <p class="section-tag">Tanya Jawab Orang Tua</p>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section-lead">
+            Informasi ringkas seputar jadwal, durasi sesi, serta cara pendampingan belajar di Saktah Tarbiyah.
+          </p>
+        </div>
+
+        <div class="faq-list" id="faqAccordion">
+          <article class="paper-card faq-item is-open">
+            <h3 class="faq-heading">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="true"
+                aria-controls="faq-answer-1"
+                id="faq-btn-1"
+              >
+                <span>Berapa durasi setiap sesi belajar dan bagaimana pengaturan jadwalnya?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+              <div class="faq-panel-inner">
+                <p>
+                  Setiap sesi berlangsung selama <strong>60 menit</strong> (45 menit materi inti &amp; aktivitas tenang,
+                  serta 15 menit jeda interaktif, muraja'ah, dan pencatatan progres). Jadwal dapat dipilih 2–3 kali
+                  sepekan pada pagi atau sore hari sesuai kesepakatan orang tua.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card faq-item">
+            <h3 class="faq-heading">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-2"
+                id="faq-btn-2"
+              >
+                <span>Apakah anak usia 4 tahun yang belum mengenal huruf sama sekali boleh mendaftar?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="faq-panel-inner">
+                <p>
+                  Tentu boleh. Pada pertemuan pertama (Asesmen Awal), pendamping akan memetakan kesiapan motorik halus,
+                  konsentrasi, dan minat anak. Materi dimulai dari tahap paling dasar dengan media kartu kertas, cerita,
+                  dan permainan lembut tanpa memaksa anak cepat hafal.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card faq-item">
+            <h3 class="faq-heading">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-3"
+                id="faq-btn-3"
+              >
+                <span>Bagaimana metode belajar agar anak tidak mudah bosan atau tertekan?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="faq-panel-inner">
+                <p>
+                  Kami menerapkan ritme <em>Saktah</em>: pergantian singkat antara fokus membaca/mengaji dengan aktivitas
+                  taktil atau kisah adab. Anak diberi ruang jeda saat lelah, diapresiasi atas prosesnya, dan didampingi
+                  dengan bahasa yang santun serta menenangkan.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card faq-item">
+            <h3 class="faq-heading">
+              <button
+                type="button"
+                class="faq-trigger"
+                aria-expanded="false"
+                aria-controls="faq-answer-4"
+                id="faq-btn-4"
+              >
+                <span>Apakah orang tua mendapatkan laporan perkembangan setelah setiap pertemuan?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-panel" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="faq-panel-inner">
+                <p>
+                  Ya. Orang tua menerima catatan ringkas setelah sesi melalui WhatsApp berisi materi yang telah dipelajari,
+                  hal yang sudah dikuasai anak, dan saran pendampingan ringan di rumah, ditambah rapor evaluasi utuh pada
+                  pertemuan ke-12.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FORMULIR PENDAFTARAN KELAS -->
+    <section class="section" id="daftar">
+      <div class="container">
+        <div class="register-layout">
+          <div class="register-info">
+            <p class="section-tag">Pendaftaran Kelas</p>
+            <h2 class="section-title">Mulai Pertemuan Pertama Buah Hati dengan Tenang</h2>
+            <p class="section-lead">
+              Isi data singkat di samping. Saat dikirim, pesan pendaftaran akan otomatis disiapkan dan terbuka di
+              WhatsApp untuk konfirmasi jadwal bersama admin Saktah Tarbiyah.
+            </p>
+
+            <div class="paper-card register-note-card">
+              <h3 class="register-note-title">Yang Disiapkan Setelah Mengirim Formulir:</h3>
+              <ul class="register-checklist">
+                <li>Konfirmasi ketersediaan jadwal &amp; lokasi belajar</li>
+                <li>Penjadwalan Pertemuan ke-1 (Asesmen Awal ramah anak)</li>
+                <li>Kartu Kehadiran 12 Pertemuan &amp; rekomendasi modul</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="paper-card register-form-card">
+            <form id="registrationForm" novalidate>
+              <div class="form-group">
+                <label for="childName" class="form-label">Nama Anak <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="childName"
+                  name="childName"
+                  class="form-control"
+                  placeholder="Contoh: Muhammad Rayyan"
+                  required
+                  autocomplete="name"
+                />
+                <span class="field-error" id="errorChildName" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="childAge" class="form-label">Usia / Jenjang <span class="required-mark" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="childAge"
+                  name="childAge"
+                  class="form-control"
+                  placeholder="Contoh: 6 tahun / TK B atau Kelas 1 SD"
+                  required
+                />
+                <span class="field-error" id="errorChildAge" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="programChoice" class="form-label">Pilihan Program <span class="required-mark" aria-hidden="true">*</span></label>
+                <select id="programChoice" name="programChoice" class="form-control" required>
+                  <option value="">-- Pilih program belajar --</option>
+                  <option value="Kelas Calistung & Tematik SD/TK">Kelas Calistung &amp; Tematik SD/TK</option>
+                  <option value="Kelas Mengaji Iqra & Tahsin Anak">Kelas Mengaji Iqra &amp; Tahsin Anak</option>
+                  <option value="Kelas Adab & Doa Harian">Kelas Adab &amp; Doa Harian</option>
+                </select>
+                <span class="field-error" id="errorProgramChoice" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredSchedule" class="form-label">Jadwal yang Diinginkan <span class="required-mark" aria-hidden="true">*</span></label>
+                <select id="preferredSchedule" name="preferredSchedule" class="form-control" required>
+                  <option value="">-- Pilih preferensi jadwal --</option>
+                  <option value="Senin & Rabu — Pagi (09.00–10.00 WIB)">Senin &amp; Rabu — Pagi (09.00–10.00 WIB)</option>
+                  <option value="Senin & Rabu — Sore (15.30–16.30 WIB)">Senin &amp; Rabu — Sore (15.30–16.30 WIB)</option>
+                  <option value="Selasa & Kamis — Pagi (09.00–10.00 WIB)">Selasa &amp; Kamis — Pagi (09.00–10.00 WIB)</option>
+                  <option value="Selasa & Kamis — Sore (15.30–16.30 WIB)">Selasa &amp; Kamis — Sore (15.30–16.30 WIB)</option>
+                  <option value="Sabtu — Pagi (09.00–10.00 WIB)">Sabtu — Pagi (09.00–10.00 WIB)</option>
+                  <option value="Jadwal Fleksibel (Diskusi via WhatsApp)">Jadwal Fleksibel (Diskusi via WhatsApp)</option>
+                </select>
+                <span class="field-error" id="errorPreferredSchedule" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="parentNotes" class="form-label">Catatan Singkat Orang Tua <span class="optional-tag">(Opsional)</span></label>
+                <textarea
+                  id="parentNotes"
+                  name="parentNotes"
+                  class="form-control form-textarea"
+                  rows="3"
+                  placeholder="Contoh: Anak sudah di Iqra 2, lebih nyaman belajar dengan permainan huruf."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Kirim Pendaftaran via WhatsApp
+              </button>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden>
+                <p id="formStatusText"></p>
+                <div class="form-status-actions">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="manualWaLink">
+                    Buka WhatsApp
+                  </a>
+                  <button type="button" class="btn btn-outline btn-sm" id="copyWaMsgBtn">
+                    Salin Teks Pesan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="#beranda" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="logo-saktah.png" alt="" class="brand-logo-img" />
+            <svg class="brand-monogram" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="40" rx="12" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6" />
+              <path d="M13 28.5C13 24.9 16.5 23.4 22 22C27.5 20.6 31 19.1 31 15.5C31 12.6 27.6 10.5 22.5 10.5C17.8 10.5 14.4 12.4 13.5 15.1" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <path d="M30.5 28.9C29.6 31.6 26.2 33.5 21.5 33.5C16.4 33.5 13 31.4 13 28.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              <circle cx="22" cy="22" r="2.2" fill="currentColor" />
+              <path d="M22 6.5L23.4 8.2L22 9.9L20.6 8.2L22 6.5Z" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Saktah Tarbiyah</span>
+            <span class="brand-sub">Ruang Tumbuh &amp; Belajar yang Tenang</span>
+          </span>
+        </a>
+        <p class="footer-desc">
+          Pendampingan belajar anak berbasis ketenangan, adab, dan kurikulum 12 pertemuan yang terukur untuk usia TK dan SD.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h3 class="footer-heading">Tautan Cepat</h3>
+        <ul class="footer-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang &amp; Filosofi</a></li>
+          <li><a href="#program">Program Belajar</a></li>
+          <li><a href="#kartu-kehadiran">Kartu Kehadiran</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h3 class="footer-heading">Layanan</h3>
+        <ul class="footer-links">
+          <li><a href="#alur-belajar">Alur 12 Pertemuan</a></li>
+          <li><a href="#saktah-play">Saktah Play</a></li>
+          <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+          <li><a href="#daftar">Formulir Pendaftaran</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h3 class="footer-heading">Jam Layanan</h3>
+        <p class="footer-meta">Senin – Sabtu · 08.00 – 17.00 WIB</p>
+        <p class="footer-meta">Konsultasi orang tua &amp; pendaftaran kelas melalui WhatsApp resmi.</p>
+        <a href="#daftar" class="btn btn-secondary btn-sm footer-cta">Daftar Sekarang</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> Saktah Tarbiyah. Seluruh hak cipta dilindungi.</p>
+      <a href="#top" class="back-to-top">Kembali ke atas &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
